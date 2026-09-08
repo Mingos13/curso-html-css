@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover > p {
+            display:block;
+            background-color: blue;
+        }
+        div:hover{
+            color:red;                
+            }
+        a:visited{
+            color:red;
+        }
+        a::after{
+            content:'link';
+        }
+        a::before{
+            content:'ola';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse 
+        <p>texto escondido</p>
+    </div>
+
+    <ul>
+        <li><a href="#">visitar meu whatsap</a></li>
+        <li><a href="#"> visiatar meu fb</a></li>
+        <li><a href="#"> visitar meu tik tok</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gruping tags</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            margin:10px;
+        }
+        nav{
+            background-color: darkgray;
+            padding: 5px;;
+        }
+        nav > a{
+            text-decoration: none;
+            color:white;
+            padding: 5px;
+        }
+        nav:hover > a{
+            color:red;
+        }
+        main{
+            background-color: rgb(187, 166, 166);
+            margin: 10px;
+        }
+        aside{
+            background-color: rgb(243, 129, 129);
+        }
+        footer{
+            text-align: center;
+            background-color: rgb(65, 65, 42);
+            padding:5px;
+            
+        }
+        footer > p{
+            color:white;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Assuntos de Mocambique</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum officia possimus assumenda praesentium hic repudiandae. Repellendus eum ad porro deserunt alias natus commodi earum sequi dignissimos sapiente. Magni, vel.</p>
+                <aside>
+                    <p>Artigo de domingos mula</p>
+                </aside>
+            </article>
+
+        </section>
+        <section id="noticias">
+            <h2>Noticias de mocambique</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corrupti quam ullam dolor tenetur impedit minima maxime fuga, fugiat amet veniam voluptate, eaque dolore debitis! Perspiciatis ullam praesentium quae quis.</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>meu primeiro site oficial</p>
+    </footer>
+</body>
+</html>
