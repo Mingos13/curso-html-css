@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse:collapse;
+
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5rem;
+            background-color: lightgrey;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Populacao federativas do estado</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">Populacao</th>
+        </thead>
+        <tr>
+            <td>Sao paulo</td>
+            <td class="num">45919045</td>
+        </tr>
+        <tr>
+            <td>Maputo</td>
+            <td class="num">2389308</td>
+        </tr>
+        <tr>
+            <td>Beira</td>
+            <td class="num">3990209</td>
+        </tr>
+        <tr>
+            <td>Pemba</td>
+            <td>3533245</td>
+        </tr>
+        <tr>
+            <td>Tete</td>
+            <td>24211166</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td scope="row">Total da populacao</td>
+                    <td class="num" scope="row"><strong>52.298.562</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
