@@ -11,6 +11,7 @@
         table{
             width: 400px;
             border-collapse:collapse;
+            position: relative;
 
         }
         td, th{
@@ -21,6 +22,12 @@
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+        /* fixa o cabecalho ao rolar*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
         .num{
             text-align: right;
@@ -60,12 +67,30 @@
         </tr>
         <tr>
             <td>Pemba</td>
-            <td>3533245</td>
+            <td class="num">3533245</td>
         </tr>
         <tr>
             <td>Tete</td>
-            <td>24211166</td>
+            <td class="num">24211166</td>
         </tr>
+        <tr >
+            <td>Manica</td>
+            <td class="num">333333</td>
+
+        </tr>
+        <tr >
+            <td>Sofala</td>
+            <td class="num">5555555</td>
+        </tr>
+        <tr>
+            <td>Vilanculos</td>
+            <td class="num">1133445</td>
+        </tr>
+        <tr>
+            <td>Pemba</td>
+            <td class="num">8889977</td>
+        </tr>
+
         <tfoot>
             <tr>
                 <td scope="row">Total da populacao</td>
@@ -73,5 +98,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro omnis officiis iusto ab quidem, assumenda accusantium accusamus est, excepturi aperiam pariatur ullam iste! Sequi beatae fugiat deserunt. Mollitia, earum est.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus omnis esse perspiciatis non tempora. Cumque aut odit incidunt exercitationem perspiciatis in voluptate, quisquam facilis qui, placeat hic at, eligendi beatae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam in autem ab ducimus blanditiis veritatis inventore iste! Eos et voluptate harum quae eveniet ducimus! Quas recusandae eos ea laborum.</p>
 </body>
 </html>
